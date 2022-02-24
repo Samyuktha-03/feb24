@@ -1,0 +1,23 @@
+assign-1
+n =int(input("enter a number"))
+primes = []
+for i in range(2, n + 1):
+	for j in range(2, int(i ** 0.5) + 1):
+ 		if i%j == 0:
+ 			break
+	else:
+		primes.append(i)
+print(primes)
+
+assign-2
+n=input()
+l=n.split()
+e=[]
+o=[]
+for i in l:
+    i=int(i)
+    if i%2==0:
+        e.append(i)
+    else:
+        o.append(i)
+print(e,' ',o)
